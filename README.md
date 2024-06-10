@@ -1,11 +1,11 @@
 # azure-functions-ex
 
 ### Steps
-1 - Instalar Azure Toolkit no ```IntelliJ``` <br>
-2 - Instalar Azure Functions Core Tools (ajustar no ```IntelliJ``` o folder da instalação) <br>
-3 - Run Azurite do ```docker-composer.yml``` <br>
+1 - Instalar plugin do <i><b>Azure Toolkit</b></i> no ```IntelliJ``` <br>
+2 - Instalar <i><b>Azure Functions Core Tools</b></i> (ajustar no ```IntelliJ``` o folder da instalação) <br>
+3 - Rodar <i><b>Azurite</b></i> do ```docker-composer.yml``` <br>
 4 - Setar ```JAVA_HOME``` nas ENV's do run <br>
-5 - Run na function
+5 - Rodar a function
 
 
 ### URL's
