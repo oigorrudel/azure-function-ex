@@ -1,0 +1,20 @@
+###
+
+# curl --location 'http://localhost:53573/admin/functions'
+GET http://localhost:53573/admin/functions
+
+###
+
+# curl --location 'http://localhost:53573/admin/functions/TimerTriggerExample'
+#--header 'Content-Type: application/json'
+#--data '{ "input": "test" }'
+POST http://localhost:53573/admin/functions/TimerTriggerExample
+Content-Type: application/json
+
+{
+  "input": "test"
+}
+
+###
+
+
