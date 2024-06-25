@@ -11,9 +11,7 @@ import java.time.LocalDateTime;
  */
 
 public class TimerTriggerJava {
-    /**
-     * This function will be invoked periodically according to the specified schedule.
-     */
+
     @FunctionName("TimerTriggerExample")
     public void run(@TimerTrigger(name = "timerInfo", schedule = "0 * * * * *") final String timerInfo,
                     final ExecutionContext context) {

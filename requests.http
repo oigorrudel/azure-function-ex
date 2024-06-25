@@ -1,14 +1,10 @@
-###
-
-# curl --location 'http://localhost:53573/admin/functions'
-GET http://localhost:53573/admin/functions
+# @name get-functions
+GET http://localhost:49371/admin/functions
 
 ###
 
-# curl --location 'http://localhost:53573/admin/functions/TimerTriggerExample'
-#--header 'Content-Type: application/json'
-#--data '{ "input": "test" }'
-POST http://localhost:53573/admin/functions/TimerTriggerExample
+# @name post-timer-trigger
+POST http://localhost:49371/admin/functions/TimerTriggerExample
 Content-Type: application/json
 
 {
@@ -17,4 +13,16 @@ Content-Type: application/json
 
 ###
 
+# @name get-http-trigger
+GET http://localhost:49371/api/HttpTriggerGetExample?name=Igor
 
+###
+
+# @name post-http-trigger
+POST http://localhost:49371/api/HttpTriggerPostExample
+Content-Type: application/json
+
+{
+  "name": "Joao",
+  "gender": "MALE"
+}
