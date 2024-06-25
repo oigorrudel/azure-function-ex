@@ -15,6 +15,3 @@ networks:
   docker-network:
     driver: bridge
 
-volumes:
-  sqlserver:
-

@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
  * Azure Functions with Timer trigger.
  */
 
-public class TimerTriggerJava {
+public class TimerTriggerExample {
 
     @FunctionName("TimerTriggerExample")
     public void run(@TimerTrigger(name = "timerInfo", schedule = "0 * * * * *") final String timerInfo,

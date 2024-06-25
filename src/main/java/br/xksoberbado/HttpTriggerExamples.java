@@ -4,6 +4,8 @@ import com.microsoft.azure.functions.*;
 import com.microsoft.azure.functions.annotation.AuthorizationLevel;
 import com.microsoft.azure.functions.annotation.FunctionName;
 import com.microsoft.azure.functions.annotation.HttpTrigger;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Optional;
 
@@ -45,24 +47,10 @@ public class HttpTriggerExamples {
             .build();
     }
 
+    @Getter
+    @Setter
     private static class PersonBody {
         private String name;
         private String gender;
-
-        public String getName() {
-            return name;
-        }
-
-        public String getGender() {
-            return gender;
-        }
-
-        public void setName(final String name) {
-            this.name = name;
-        }
-
-        public void setGender(final String gender) {
-            this.gender = gender;
-        }
     }
 }
